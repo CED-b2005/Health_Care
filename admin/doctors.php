@@ -164,6 +164,9 @@
                     if($_POST){
                         $keyword=$_POST["search"];
                         
+                        
+                        
+                        
                         $sqlmain= "select * from doctor where docemail='$keyword' or docname='$keyword' or docname like '$keyword%' or docname like '%$keyword' or docname like '%$keyword%'";
                     }else{
                         $sqlmain= "select * from doctor order by docid desc";
@@ -527,7 +530,7 @@
                                 <td colspan="2">
                                     <input type="reset" value="Reset" class="login-btn btn-primary-soft btn" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 
-                                    <input type="submit" value="Add" class="login-btn btn-primary btn">
+                                    <input type="submit" value="Add" name="Submit" class="login-btn btn-primary btn">
                                 </td>
                 
                             </tr>
@@ -590,7 +593,7 @@
 
                 );
 
-            if($error_1!='4'){
+            if($error_1=='4'){
                     echo '
                     <div id="popup1" class="overlay">
                             <div class="popup">
@@ -694,12 +697,12 @@
                                         </td>
                                     </tr><tr>
                                         <td class="label-td" colspan="2">
-                                            <label for="cpassword" class="form-label">Conform Password: </label>
+                                            <label for="cpassword" class="form-label">Confirm Password: </label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="label-td" colspan="2">
-                                            <input type="password" name="cpassword" class="input-text" placeholder="Conform Password" required><br>
+                                            <input type="password" name="cpassword" class="input-text" placeholder="Confirm Password" required><br>
                                         </td>
                                     </tr>
                                     

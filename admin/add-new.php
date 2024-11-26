@@ -13,12 +13,10 @@
         .popup{
             animation: transitionIn-Y-bottom 0.5s;
         }
-</style>
+    </style>
 </head>
 <body>
     <?php
-
-    //learn from w3schools.com
 
     session_start();
 
@@ -31,15 +29,15 @@
         header("location: ../login.php");
     }
     
-    
-
-    //import database
     include("../connection.php");
 
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
 
+    require '../vendor/autoload.php';
+    
 
     if($_POST){
-        //print_r($_POST);
         $result= $database->query("select * from webuser");
         $name=$_POST['name'];
         $nic=$_POST['nic'];
@@ -61,8 +59,31 @@
                 $database->query($sql1);
                 $database->query($sql2);
 
-                //echo $sql1;
-                //echo $sql2;
+                // Gửi email
+                $mail = new PHPMailer(true);
+                try {
+                    $mail->SMTPDebug = 0;
+                    $mail->isSMTP();
+                    $mail->Host = 'smtp.gmail.com';
+                    $mail->SMTPAuth = true;
+                    $mail->Username = 'phongtrannn3005@gmail.com';
+                    $mail->Password = 'swmxsftcamaonfoy';
+                    $mail->SMTPSecure = 'tls';
+                    $mail->Port = 587;
+
+                    $mail->setFrom('phongtrannn3005@gmail.com', 'Admin');
+                    $mail->addAddress($email, $name);
+
+                    $mail->isHTML(true);
+                    $mail->Subject = 'Tài khoản bác sĩ mới của bạn';
+                    $mail->Body    = 'Chào ' . $name . ',<br><br>Tài khoản của bạn đã được tạo thành công.<br>Email: ' . $email . '<br>Mật khẩu: ' . $password . '<br><br>Vui lòng đổi mật khẩu sau khi đăng nhập.';
+
+                    $mail->send();
+                    echo 'Email đã được gửi thành công.';
+                } catch (Exception $e) {
+                    echo 'Email không thể được gửi. Lỗi: ', $mail->ErrorInfo;
+                }
+
                 $error= '4';
                 
             }
@@ -71,19 +92,11 @@
             $error='2';
         }
     
-    
-        
-        
     }else{
-        //header('location: signup.php');
         $error='3';
     }
     
-
     header("location: doctors.php?action=add&error=".$error);
     ?>
-    
-   
-
 </body>
 </html>

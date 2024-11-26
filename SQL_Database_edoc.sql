@@ -22,7 +22,7 @@ SET time_zone = "+00:00";
 -- Database: `edoc`
 --
 
--- --------------------------------------------------------
+-- --------------------------x------------------------------
 
 --
 -- Table structure for table `admin`
@@ -126,7 +126,7 @@ INSERT INTO `patient` (`pid`, `pemail`, `pname`, `ppassword`, `paddress`, `pnic`
 -- Table structure for table `schedule`
 --
 
-DROP TABLE IF EXISTS `schedule`;
+DROP TABLE IF EXISTS `schedule`;      
 CREATE TABLE IF NOT EXISTS `schedule` (
   `scheduleid` int(11) NOT NULL AUTO_INCREMENT,
   `docid` varchar(255) DEFAULT NULL,
@@ -138,7 +138,7 @@ CREATE TABLE IF NOT EXISTS `schedule` (
   KEY `docid` (`docid`)
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
---
+--  
 -- Dumping data for table `schedule`
 --
 
