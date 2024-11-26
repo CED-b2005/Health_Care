@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/animations.css">  
     <link rel="stylesheet" href="css/main.css">  
-    <link rel="stylesheet" href="css/login.css">
-        
+    <link rel="stylesheet" href="css/login.css">  
     <title>Login</title>
-
-    
-    
 </head>
 <body>
     <?php
@@ -33,10 +29,6 @@
 
     //import database
     include("connection.php");
-
-    
-
-
 
     if($_POST){
 
@@ -80,7 +72,6 @@
                     $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Wrong credentials: Invalid email or password</label>';
                 }
 
-
             }elseif($utype=='d'){
                 //TODO
                 $checker = $database->query("select * from doctor where docemail='$email' and docpassword='$password'");
@@ -97,27 +88,14 @@
                 }
 
             }
-            
+
         }else{
             $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">We cant found any acount for this email.</label>';
-        }
-
-
-
-
-
-
-        
+        }  
     }else{
         $error='<label for="promter" class="form-label">&nbsp;</label>';
     }
-
     ?>
-
-
-
-
-
     <center>
     <div class="container">
         <table border="0" style="margin: 0;padding: 0;width: 60%;">
@@ -154,8 +132,6 @@
                     <input type="Password" name="userpassword" class="input-text" placeholder="Password" required>
                 </td>
             </tr>
-
-
             <tr>
                 <td><br>
                 <?php echo $error ?>
@@ -176,10 +152,6 @@
                     <br><br><br>
                 </td>
             </tr>
-                        
-                        
-    
-                        
                     </form>
         </table>
 
