@@ -128,9 +128,6 @@
                         $sqlmain= "select * from appointment inner join patient on patient.pid=appointment.pid inner join schedule on schedule.scheduleid=appointment.scheduleid where schedule.docid=$userid;";
                         $selecttype="My";
                     }
-
-
-
                 ?>
         <div class="dash-body">
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
@@ -162,11 +159,9 @@
                             echo ' </datalist>';
 ?>
                             
-                       
                             <input type="Submit" value="Search" name="search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                         
-                        </form>
-                        
+                        </form>  
                     </td>
                     <td width="15%">
                         <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
@@ -235,42 +230,26 @@
                         <thead>
                         <tr>
                                 <th class="table-headin">
-                                    
-                                
                                 Name
-                                
                                 </th>
                                 <th class="table-headin">
-                                    
-                                
-                                    NIC
-                                    
+                                    NIC  
                                 </th>
                                 <th class="table-headin">
-                                
-                            
                                 Telephone
-                                
                                 </th>
                                 <th class="table-headin">
                                     Email
                                 </th>
-                                <th class="table-headin">
-                                    
+                                <th class="table-headin"> 
                                     Date of Birth
-                                    
                                 </th>
                                 <th class="table-headin">
-                                    
                                     Events
-                                    
                                 </tr>
                         </thead>
                         <tbody>
-                        
-                            <?php
-
-                                
+                            <?php 
                                 $result= $database->query($sqlmain);
                                 //echo $sqlmain;
                                 if($result->num_rows==0){
@@ -326,20 +305,15 @@
                                     </tr>';
                                     
                                 }
-                            }
-                                 
+                            }     
                             ?>
- 
                             </tbody>
 
                         </table>
                         </div>
                         </center>
                    </td> 
-                </tr>
-                       
-                        
-                        
+                </tr>          
             </table>
         </div>
     </div>
@@ -439,8 +413,7 @@
                             '.$address.'<br><br>
                             </td>
                             </tr>
-                            <tr>
-                                
+                            <tr> 
                                 <td class="label-td" colspan="2">
                                     <label for="name" class="form-label">Date of Birth: </label>
                                 </td>
@@ -448,19 +421,14 @@
                             <tr>
                                 <td class="label-td" colspan="2">
                                     '.$dob.'<br><br>
-                                </td>
-                                
+                                </td>  
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <a href="patient.php"><input type="button" value="OK" class="login-btn btn-primary-soft btn" ></a>
-                                
-                                    
+                                    <a href="patient.php"><input type="button" value="OK" class="login-btn btn-primary-soft btn" ></a>    
                                 </td>
                 
                             </tr>
-                           
-
                         </table>
                         </div>
                     </center>
@@ -468,7 +436,6 @@
             </div>
             </div>
             ';
-        
     };
 
 ?>
