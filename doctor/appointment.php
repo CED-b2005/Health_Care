@@ -20,24 +20,17 @@
 </head>
 <body>
     <?php
-
     //learn from w3schools.com
-
     session_start();
-
     if(isset($_SESSION["user"])){
         if(($_SESSION["user"])=="" or $_SESSION['usertype']!='d'){
             header("location: ../login.php");
         }else{
             $useremail=$_SESSION["user"];
         }
-
     }else{
         header("location: ../login.php");
     }
-    
-    
-
        //import database
        include("../connection.php");
        $userrow = $database->query("select * from doctor where docemail='$useremail'");
@@ -79,7 +72,6 @@
                         <a href="appointment.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">My Appointments</p></a></div>
                     </td>
                 </tr>
-                
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-session">
                         <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">My Sessions</p></div></a>
@@ -94,8 +86,7 @@
                     <td class="menu-btn menu-icon-settings">
                         <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
                     </td>
-                </tr>
-                
+                </tr>  
             </table>
         </div>
         <div class="dash-body">
@@ -105,8 +96,7 @@
                     <a href="appointment.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Back</font></button></a>
                     </td>
                     <td>
-                        <p style="font-size: 23px;padding-left:12px;font-weight: 600;">Appointment Manager</p>
-                                           
+                        <p style="font-size: 23px;padding-left:12px;font-weight: 600;">Appointment Manager</p>                   
                     </td>
                     <td width="15%">
                         <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
@@ -114,24 +104,17 @@
                         </p>
                         <p class="heading-sub12" style="padding: 0;margin: 0;">
                             <?php 
-
                         date_default_timezone_set('Asia/Kolkata');
-
                         $today = date('Y-m-d');
                         echo $today;
-
                         $list110 = $database->query("select * from schedule inner join appointment on schedule.scheduleid=appointment.scheduleid inner join patient on patient.pid=appointment.pid inner join doctor on schedule.docid=doctor.docid  where  doctor.docid=$userid ");
-
                         ?>
                         </p>
                     </td>
                     <td width="10%">
                         <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
                     </td>
-
-
                 </tr>
-               
                 <!-- <tr>
                     <td colspan="4" >
                         <div style="display: flex;margin-top: 40px;">
@@ -142,11 +125,9 @@
                     </td>
                 </tr> -->
                 <tr>
-                    <td colspan="4" style="padding-top:10px;width: 100%;" >
-                    
+                    <td colspan="4" style="padding-top:10px;width: 100%;" > 
                         <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">My Appointments (<?php echo $list110->num_rows; ?>)</p>
-                    </td>
-                    
+                    </td>   
                 </tr>
                 <tr>
                     <td colspan="4" style="padding-top:0px;width: 100%;" >
@@ -154,56 +135,36 @@
                         <table class="filter-container" border="0" >
                         <tr>
                            <td width="10%">
-
                            </td> 
                         <td width="5%" style="text-align: center;">
                         Date:
                         </td>
                         <td width="30%">
-                        <form action="" method="post">
-                            
+                        <form action="" method="post">   
                             <input type="date" name="sheduledate" id="date" class="input-text filter-container-items" style="margin: 0;width: 95%;">
-
                         </td>
-                        
                     <td width="12%">
                         <input type="submit"  name="filter" value=" Filter" class=" btn-primary-soft btn button-icon btn-filter"  style="padding: 15px; margin :0;width:100%">
                         </form>
                     </td>
-
                     </tr>
                             </table>
-
                         </center>
-                    </td>
-                    
+                    </td>   
                 </tr>
-                
                 <?php
-
-
                     $sqlmain= "select appointment.appoid,schedule.scheduleid,schedule.title,doctor.docname,patient.pname,schedule.scheduledate,schedule.scheduletime,appointment.apponum,appointment.appodate from schedule inner join appointment on schedule.scheduleid=appointment.scheduleid inner join patient on patient.pid=appointment.pid inner join doctor on schedule.docid=doctor.docid  where  doctor.docid=$userid ";
 
                     if($_POST){
                         //print_r($_POST);
-                        
-
-
-                        
+                           
                         if(!empty($_POST["sheduledate"])){
                             $sheduledate=$_POST["sheduledate"];
                             $sqlmain.=" and schedule.scheduledate='$sheduledate' ";
                         };
-
-                        
-
                         //echo $sqlmain;
-
                     }
-
-
-                ?>
-                  
+                ?> 
                 <tr>
                    <td colspan="4">
                        <center>
@@ -216,33 +177,19 @@
                                 </th>
                                 <th class="table-headin">
                                     
-                                    Appointment number
-                                    
+                                    Appointment number    
                                 </th>
-                               
                                 <th class="table-headin">
-                                    
-                                
-                                    Session Title
-                                    
-                                    </th>
-                                
+                                    Session Title   
+                                </th>
                                 <th class="table-headin" >
-                                    
-                                    Session Date & Time
-                                    
+                                    Session Date & Time    
                                 </th>
-                                
                                 <th class="table-headin">
-                                    
-                                    Appointment Date
-                                    
+                                    Appointment Date   
                                 </th>
-                                
-                                <th class="table-headin">
-                                    
-                                    Events
-                                    
+                                <th class="table-headin">  
+                                    Events   
                                 </tr>
                         </thead>
                         <tbody>

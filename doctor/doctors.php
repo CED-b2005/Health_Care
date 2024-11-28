@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/animations.css">  
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
-        
     <title>Doctors</title>
     <style>
         .popup{
@@ -35,13 +34,9 @@
     }else{
         header("location: ../login.php");
     }
-    
-    
 
     //import database
     include("../connection.php");
-
-    
     ?>
     <div class="container">
         <div class="menu">
@@ -184,30 +179,20 @@
                         <thead>
                         <tr>
                                 <th class="table-headin">
-                                    
-                                
                                 Doctor Name
-                                
                                 </th>
                                 <th class="table-headin">
                                     Email
                                 </th>
-                                <th class="table-headin">
-                                    
+                                <th class="table-headin">   
                                     Specialties
-                                    
                                 </th>
-                                <th class="table-headin">
-                                    
-                                    Events
-                                    
+                                <th class="table-headin">  
+                                    Events 
                                 </tr>
                         </thead>
                         <tbody>
-                        
                             <?php
-
-                                
                                 $result= $database->query($sqlmain);
 
                                 if($result->num_rows==0){
