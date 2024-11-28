@@ -131,8 +131,6 @@
         
                                 $today = date('Y-m-d');
                                 echo $today;
-
-
                                 $patientrow = $database->query("select  * from  patient;");
                                 $doctorrow = $database->query("select  * from  doctor;");
                                 $appointmentrow = $database->query("select  * from  appointment where appodate>='$today';");

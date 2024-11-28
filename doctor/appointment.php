@@ -186,24 +186,14 @@
 
                     if($_POST){
                         //print_r($_POST);
-                        
-
-
-                        
                         if(!empty($_POST["sheduledate"])){
                             $sheduledate=$_POST["sheduledate"];
                             $sqlmain.=" and schedule.scheduledate='$sheduledate' ";
                         };
-
-                        
-
                         //echo $sqlmain;
 
                     }
-
-
-                ?>
-                  
+                ?> 
                 <tr>
                    <td colspan="4">
                        <center>
@@ -214,39 +204,23 @@
                                 <th class="table-headin">
                                     Patient name
                                 </th>
-                                <th class="table-headin">
-                                    
-                                    Appointment number
-                                    
+                                <th class="table-headin">   
+                                    Appointment number   
                                 </th>
-                               
                                 <th class="table-headin">
-                                    
-                                
-                                    Session Title
-                                    
+                                    Session Title   
                                     </th>
-                                
-                                <th class="table-headin" >
-                                    
-                                    Session Date & Time
-                                    
+                                <th class="table-headin" >   
+                                    Session Date & Time    
                                 </th>
-                                
-                                <th class="table-headin">
-                                    
-                                    Appointment Date
-                                    
+                                <th class="table-headin">    
+                                    Appointment Date    
                                 </th>
-                                
-                                <th class="table-headin">
-                                    
-                                    Events
-                                    
+                                <th class="table-headin">   
+                                    Events    
                                 </tr>
                         </thead>
                         <tbody>
-                        
                             <?php
 
                                 
