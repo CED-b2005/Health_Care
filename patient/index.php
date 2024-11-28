@@ -278,19 +278,8 @@
                                             </tr>
                                         </table>
                                     </center>
-
-
-
-
-
-
-
-
                                 </td>
                                 <td>
-
-
-                            
                                     <p style="font-size: 20px;font-weight:600;padding-left: 40px;" class="anime">Your Upcoming Booking</p>
                                     <center>
                                         <div class="abc scroll" style="height: 250px;padding: 0;margin: 0;">

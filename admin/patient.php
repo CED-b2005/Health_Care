@@ -98,7 +98,6 @@
                         <form action="" method="post" class="header-search">
 
                             <input type="search" name="search" class="input-text header-searchbar" placeholder="Search Patient name or Email" list="patient">&nbsp;&nbsp;
-                            
                             <?php
                                 echo '<datalist id="patient">';
                                 $list11 = $database->query("select  pname,pemail from patient;");
@@ -110,13 +109,9 @@
                                     echo "<option value='$d'><br/>";
                                     echo "<option value='$c'><br/>";
                                 };
-
                             echo ' </datalist>';
                             ?>
-                            
-                       
                             <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
-                        
                         </form>   
                     </td>
                     <td width="15%">
