@@ -175,11 +175,7 @@
                     <a href="signup.php" class="hover-link1 non-style-link">Sign Up</a>
                     <br><br><br>
                 </td>
-            </tr>
-                        
-                        
-    
-                        
+            </tr>         
                     </form>
         </table>
 

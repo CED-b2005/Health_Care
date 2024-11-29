@@ -36,8 +36,6 @@
         header("location: ../login.php");
     }
     
-    
-
     //import database
     include("../connection.php");
 
@@ -122,7 +120,6 @@
                             echo ' </datalist>';
 ?>
                             
-                       
                             <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                         
                         </form>
@@ -144,7 +141,6 @@
                     <td width="10%">
                         <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
                     </td>
-
 
                 </tr>
                
@@ -171,9 +167,6 @@
                         $sqlmain= "select * from doctor order by docid desc";
 
                     }
-
-
-
                 ?>
                   
                 <tr>
@@ -183,31 +176,14 @@
                         <table width="93%" class="sub-table scrolldown" border="0">
                         <thead>
                         <tr>
-                                <th class="table-headin">
-                                    
-                                
-                                Doctor Name
-                                
-                                </th>
-                                <th class="table-headin">
-                                    Email
-                                </th>
-                                <th class="table-headin">
-                                    
-                                    Specialties
-                                    
-                                </th>
-                                <th class="table-headin">
-                                    
-                                    Events
-                                    
-                                </tr>
+                                <th class="table-headin"> Doctor Name </th>
+                                <th class="table-headin">Email</th>
+                                <th class="table-headin">Specialties</th>
+                                <th class="table-headin">Events</tr>
                         </thead>
                         <tbody>
-                        
+                    
                             <?php
-
-                                
                                 $result= $database->query($sqlmain);
 
                                 if($result->num_rows==0){
@@ -258,7 +234,7 @@
                                         </div>
                                         </td>
                                     </tr>';
-                                    
+  
                                 }
                             }
                                  
@@ -270,10 +246,7 @@
                         </div>
                         </center>
                    </td> 
-                </tr>
-                       
-                        
-                        
+                </tr>         
             </table>
         </div>
     </div>
@@ -331,7 +304,7 @@
                         
                             <tr>
                                 <td>
-                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
+                                    <p style="padding: 0;margin: 0;text-align: center;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
                                 </td>
                             </tr>
                             
@@ -390,9 +363,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <a href="doctors.php"><input type="button" value="OK" class="login-btn btn-primary-soft btn" ></a>
-                                
-                                    
+                                    <a href="doctors.php"><input type="button" value="OK" class="login-btn btn-primary-soft btn" ></a>  
                                 </td>
                 
                             </tr>
@@ -497,9 +468,7 @@
                                             $id00=$row00["id"];
                                             echo "<option value=".$id00.">$sn</option><br/>";
                                         };
-        
-        
-        
+                                        
                                         
                         echo     '       </select><br>
                                 </td>

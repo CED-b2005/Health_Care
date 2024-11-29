@@ -175,12 +175,6 @@
                         <table border="0" width="100%"">
                             <tr>
                                 <td width="50%">
-
-                                    
-
-
-
-
                                     <center>
                                         <table class="filter-container" style="border: none;" border="0">
                                             <tr>
@@ -250,18 +244,8 @@
                                         </table>
                                     </center>
 
-
-
-
-
-
-
-
                                 </td>
                                 <td>
-
-
-                            
                                     <p id="anim" style="font-size: 20px;font-weight:600;padding-left: 40px;">Your Up Coming Sessions until Next week</p>
                                     <center>
                                         <div class="abc scroll" style="height: 250px;padding: 0;margin: 0;">
@@ -330,27 +314,18 @@
                                                         <td style="text-align:center;">
                                                             '.substr($scheduletime,0,5).'
                                                         </td>
-
-                
                                                        
                                                     </tr>';
                                                     
                                                 }
                                             }
                                                  
-                                            ?>
-                 
+                                            ?> 
                                             </tbody>
                 
                                         </table>
                                         </div>
                                         </center>
-
-
-
-
-
-
 
                                 </td>
                             </tr>
@@ -360,7 +335,6 @@
             </table>
         </div>
     </div>
-
 
 </body>
 </html>

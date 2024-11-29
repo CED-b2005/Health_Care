@@ -135,8 +135,6 @@
                                 $doctorrow = $database->query("select  * from  doctor;");
                                 $appointmentrow = $database->query("select  * from  appointment where appodate>='$today';");
                                 $schedulerow = $database->query("select  * from  schedule where scheduledate='$today';");
-
-
                                 ?>
                                 </p>
                             </td>

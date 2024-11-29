@@ -296,10 +296,7 @@
                         </div>
                         </center>
                    </td> 
-                </tr>
-                       
-                        
-                        
+                </tr>       
             </table>
         </div>
     </div>
@@ -363,9 +360,6 @@
                                             $id00=$row00["docid"];
                                             echo "<option value=".$id00.">$sn</option><br/>";
                                         };
-        
-        
-        
                                         
                         echo     '       </select><br><br>
                                 </td>
@@ -377,7 +371,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <input type="number" name="nop" class="input-text" min="0"  placeholder="The final appointment number for this session depends on this number" required><br>
+                                    <input type="number" name="nop" class="input-text" min="0" placeholder="The final appointment number for this session depends on this number" required><br>
                                 </td>
                             </tr>
                             <tr>

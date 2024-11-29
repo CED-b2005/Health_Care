@@ -349,7 +349,7 @@
                         
                             <tr>
                                 <td>
-                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
+                                    <p style="padding: 0;margin: 0;text-align: center;font-size: 25px;font-weight: 500;">View Details</p><br><br>
                                 </td>
                             </tr>
                             
@@ -360,8 +360,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="label-td" colspan="2">
-                                    '.$title.'<br><br>
+                                <td style="border: 1px solid green" class="label-td " colspan="2">
+                                    '.$title.'
                                 </td>
                                 
                             </tr>
@@ -371,8 +371,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="label-td" colspan="2">
-                                '.$docname.'<br><br>
+                                <td style="border: 1px solid green" class="label-td" colspan="2">
+                                '.$docname.'
                                 </td>
                             </tr>
                             <tr>
@@ -381,8 +381,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="label-td" colspan="2">
-                                '.$scheduledate.'<br><br>
+                                <td style="border: 1px solid green" class="label-td" colspan="2">
+                                '.$scheduledate.'
                                 </td>
                             </tr>
                             <tr>
@@ -391,8 +391,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="label-td" colspan="2">
-                                '.$scheduletime.'<br><br>
+                                <td style="border: 1px solid green" class="label-td" colspan="2">
+                                '.$scheduletime.'
                                 </td>
                             </tr>
                             <tr>
@@ -401,8 +401,6 @@
                                     <br><br>
                                 </td>
                             </tr>
-
-                            
                             <tr>
                             <td colspan="4">
                                 <center>
@@ -421,18 +419,14 @@
                                              Appointment number
                                              
                                          </th>
-                                        
-                                         
+
                                          <th class="table-headin">
                                              Patient Telephone
                                          </th>
                                          
                                  </thead>
                                  <tbody>';
-                                 
-                
-                
-                                         
+  
                                          $result= $database->query($sqlmain12);
                 
                                          if($result->num_rows==0){
@@ -475,17 +469,12 @@
                                                  <td>
                                                  '.substr($ptel,0,25).'
                                                  </td>
-                                                 
-                                                 
-                
-                                                 
+   
                                              </tr>';
                                              
                                          }
                                      }
-                                          
-                                     
-                
+
                                     echo '</tbody>
                 
                                  </table>

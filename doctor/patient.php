@@ -344,7 +344,7 @@
                         
                             <tr>
                                 <td>
-                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
+                                    <p style="padding: 0;margin: 0;text-align: center;font-size: 25px;font-weight: 500;">View Details</p><br><br>
                                 </td>
                             </tr>
                             <tr>
