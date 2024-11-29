@@ -168,9 +168,8 @@ body{
 
 
 .sub-table{
-    border: 1px solid #ebebeb;
     border-radius: 8px;
-    
+
 }
 
 .filter-container{
@@ -215,6 +214,7 @@ body{
     background: rgba(0, 0, 0, 0.7);
     transition: opacity 500ms;
     opacity: 1;
+    overflow: auto;
   }
   .overlay:target {
     visibility: visible;
@@ -223,11 +223,11 @@ body{
   }
   
   .popup {
-    margin: 70px auto;
-    padding: 20px;
+    margin: 1px auto;
     background: #fff;
     border-radius: 5px;
     width: 50%;
+    height: 700px;
     position: relative;
     transition: all 5s ease-in-out;
   }
@@ -251,7 +251,7 @@ body{
   }
   .popup .content {
     max-height: 30%;
-    overflow: auto;
+    overflow-y: auto;
   }
   
   @media screen and (max-width: 700px){

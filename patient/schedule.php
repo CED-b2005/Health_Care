@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/animations.css">  
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
-        
     <title>Sessions</title>
     <style>
         .popup{
@@ -35,8 +34,6 @@
     }else{
         header("location: ../login.php");
     }
-    
-
     //import database
     include("../connection.php");
     $sqlmain= "select * from patient where pemail=?";
@@ -47,16 +44,10 @@
     $userfetch=$result->fetch_assoc();
     $userid= $userfetch["pid"];
     $username=$userfetch["pname"];
-
-
     //echo $userid;
     //echo $username;
-    
     date_default_timezone_set('Asia/Kolkata');
-
     $today = date('Y-m-d');
-
-
  //echo $userid;
  ?>
  <div class="container">
@@ -92,7 +83,6 @@
                         <a href="doctors.php" class="non-style-link-menu"><div><p class="menu-text">All Doctors</p></a></div>
                     </td>
                 </tr>
-                
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-session menu-active menu-icon-session-active">
                         <a href="schedule.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">Scheduled Sessions</p></div></a>
@@ -112,7 +102,6 @@
             </table>
         </div>
         <?php
-
                 $sqlmain= "select * from schedule inner join doctor on schedule.docid=doctor.docid where schedule.scheduledate>='$today'  order by schedule.scheduledate asc";
                 $sqlpt1="";
                 $insertkey="";
@@ -132,13 +121,8 @@
                         }
 
                     }
-
-
                 $result= $database->query($sqlmain)
-
-
                 ?>
-                  
         <div class="dash-body">
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
                 <tr >
@@ -154,31 +138,18 @@
                                             echo '<datalist id="doctors">';
                                             $list11 = $database->query("select DISTINCT * from  doctor;");
                                             $list12 = $database->query("select DISTINCT * from  schedule GROUP BY title;");
-                                            
-
-                                            
-
-
                                             for ($y=0;$y<$list11->num_rows;$y++){
                                                 $row00=$list11->fetch_assoc();
                                                 $d=$row00["docname"];
-                                               
-                                                echo "<option value='$d'><br/>";
-                                               
+                                                echo "<option value='$d'><br/>"; 
                                             };
-
-
                                             for ($y=0;$y<$list12->num_rows;$y++){
                                                 $row00=$list12->fetch_assoc();
                                                 $d=$row00["title"];
-                                               
                                                 echo "<option value='$d'><br/>";
-                                                                                         };
-
+                                             };
                                         echo ' </datalist>';
             ?>
-                                        
-                                
                                         <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                                         </form>
                     </td>
@@ -188,53 +159,33 @@
                         </p>
                         <p class="heading-sub12" style="padding: 0;margin: 0;">
                             <?php 
-
-                                
                                 echo $today;
-
-                                
-
                         ?>
                         </p>
                     </td>
                     <td width="10%">
                         <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
                     </td>
-
-
                 </tr>
-                
-                
                 <tr>
                     <td colspan="4" style="padding-top:10px;width: 100%;" >
                         <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)"><?php echo $searchtype." Sessions"."(".$result->num_rows.")"; ?> </p>
                         <p class="heading-main12" style="margin-left: 45px;font-size:22px;color:rgb(49, 49, 49)"><?php echo $q.$insertkey.$q ; ?> </p>
                     </td>
-                    
                 </tr>
-                
-                
-                
                 <tr>
                    <td colspan="4">
                        <center>
                         <div class="abc scroll">
-                        <table width="100%" class="sub-table scrolldown" border="0" style="padding: 50px;border:none">
-                            
+                        <table width="100%" class="sub-table scrolldown" border="0" style="padding: 50px;border:none">   
                         <tbody>
-                        
                             <?php
-
-                                
-                                
-
                                 if($result->num_rows==0){
                                     echo '<tr>
                                     <td colspan="4">
                                     <br><br><br><br>
                                     <center>
-                                    <img src="../img/notfound.svg" width="25%">
-                                    
+                                    <img src="../img/notfound.svg" width="25%"> 
                                     <br>
                                     <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">We  couldnt find anything related to your keywords !</p>
                                     <a class="non-style-link" href="schedule.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Show all Sessions &nbsp;</font></button>
@@ -242,8 +193,7 @@
                                     </center>
                                     <br><br><br><br>
                                     </td>
-                                    </tr>';
-                                    
+                                    </tr>';   
                                 }
                                 else{
                                     //echo $result->num_rows;
@@ -263,7 +213,6 @@
                                         if($scheduleid==""){
                                             break;
                                         }
-
                                         echo '
                                         <td style="width: 25%;">
                                                 <div  class="dashboard-items search-items"  >
@@ -284,11 +233,8 @@
                                                             
                                                 </div>
                                             </td>';
-
                                     }
                                     echo "</tr>";
-                                    
-                                    
                                     // echo '<tr>
                                     //     <td> &nbsp;'.
                                     //     substr($title,0,30)
@@ -312,25 +258,17 @@
                                     // </tr>';
                                     
                                 }
-                            }
-                                 
+                            }    
                             ?>
- 
                             </tbody>
-
                         </table>
                         </div>
                         </center>
                    </td> 
-                </tr>
-                       
-                        
-                        
+                </tr>          
             </table>
         </div>
     </div>
-
     </div>
-
 </body>
 </html>

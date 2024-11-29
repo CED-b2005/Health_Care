@@ -169,9 +169,6 @@
                         $sqlmain= "select * from doctor order by docid desc";
 
                     }
-
-
-
                 ?>
                   
                 <tr>
@@ -202,10 +199,7 @@
                                 </tr>
                         </thead>
                         <tbody>
-                        
-                            <?php
-
-                                
+                            <?php 
                                 $result= $database->query($sqlmain);
 
                                 if($result->num_rows==0){

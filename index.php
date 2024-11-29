@@ -12,11 +12,9 @@
         table{
             animation: transitionIn-Y-bottom 0.5s;
         }
-    </style>
-        
+    </style>  
 </head>
 <body>
-    
     <div class="full-height">
         <center>
         <table border="0">
@@ -32,7 +30,6 @@
                     <a href="signup.php" class="non-style-link"><p class="nav-item" style="padding-right: 10px;">REGISTER</p></a>
                 </td>
             </tr>
-            
             <tr>
                 <td  colspan="3">
                     <p class="heading-text">Avoid Hassles & Delays.</p>
@@ -45,26 +42,22 @@
                     We offer you a free doctor channeling service, Make your appointment now.</p>
                 </td>
             </tr>
-            <tr>
-                
+            <tr> 
                 <td colspan="3">
                     <center>
                     <a href="login.php" >
                         <input type="button" value="Make Appointment" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
                     </a>
                 </center>
-                </td>
-                
+                </td>  
             </tr>
             <tr>
-                <td colspan="3">
-                   
+                <td colspan="3">   
                 </td>
             </tr>
         </table>
         <p class="sub-text2 footer-hashen">A Web Solution by Hashen.</p>
     </center>
-    
     </div>
 </body>
 </html>
