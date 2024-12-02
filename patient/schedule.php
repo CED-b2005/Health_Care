@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/animations.css">  
+    <link rel="stylesheet" href="../css/main.css">  
+    <link rel="stylesheet" href="../css/admin.css"> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/animations.css">  
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
-        
+
     <title>Sessions</title>
     <style>
         .popup{
@@ -25,6 +31,7 @@
 
     session_start();
 
+  
     if(isset($_SESSION["user"])){
         if(($_SESSION["user"])=="" or $_SESSION['usertype']!='p'){
             header("location: ../login.php");
@@ -247,23 +254,39 @@
                                 }
                                 else{
                                     //echo $result->num_rows;
-                                for ( $x=0; $x<($result->num_rows);$x++){
-                                    echo "<tr>";
-                                    for($q=0;$q<3;$q++){
-                                        $row=$result->fetch_assoc();
-                                        if (!isset($row)){
-                                            break;
-                                        };
-                                        $scheduleid=$row["scheduleid"];
-                                        $title=$row["title"];
-                                        $docname=$row["docname"];
-                                        $scheduledate=$row["scheduledate"];
-                                        $scheduletime=$row["scheduletime"];
+                                    // for ( $x=0; $x<($result->num_rows);$x++){
+                                    //     echo "<tr>";
+                                    //     for($q=0;$q<3;$q++){
+                                    //         $row=$result->fetch_assoc();
+                                    //         if (!isset($row)){
+                                    //             break;
+                                    //         };
+                                    //         $scheduleid=$row["scheduleid"];
+                                    //         $title=$row["title"];
+                                    //         $docname=$row["docname"];
+                                    //         $scheduledate=$row["scheduledate"];
+                                    //         $scheduletime=$row["scheduletime"];
 
-                                        if($scheduleid==""){
-                                            break;
-                                        }
-
+                                    //         if($scheduleid==""){
+                                    //             break;
+                                    //         }
+                                    for ( $x=0; $x<($result->num_rows);$x++){
+                                        echo "<tr>";
+                                        for($q=0;$q<3;$q++){
+                                            $row=$result->fetch_assoc();
+                                            if (!isset($row)){
+                                                break;
+                                            };
+                                            $scheduleid=$row["scheduleid"];
+                                            $title=$row["title"];
+                                            $docname=$row["docname"];
+                                            $scheduledate=$row["scheduledate"];
+                                            $scheduletime=$row["scheduletime"];
+    
+                                            if($scheduleid==""){
+                                                break;
+                                            }
+    
                                         echo '
                                         <td style="width: 25%;">
                                                 <div  class="dashboard-items search-items"  >
