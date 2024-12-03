@@ -92,50 +92,50 @@ if ($result->num_rows > 0) {
 
 <body>
     <div class="container">
-        <h1>Chi Tiết Thông Báo</h1>
+        <h1>Views detail</h1>
         <div class="detail-item">
             <span class="label">ID:</span>
             <span class="value"><?php echo $notification['id']; ?></span>
         </div>
         <div class="detail-item">
-            <span class="label">Email Người Gửi:</span>
+            <span class="label">Sender_email:</span>
             <span class="value"><?php echo $notification['sender_email']; ?></span>
         </div>
         <div class="detail-item">
-            <span class="label">Email Người Nhận:</span>
+            <span class="label">Recipient_email:</span>
             <span class="value"><?php echo $notification['recipient_email']; ?></span>
         </div>
         <div class="detail-item">
-            <span class="label">Tiêu Đề:</span>
+            <span class="label">Title:</span>
             <span class="value"><?php echo $notification['title']; ?></span>
         </div>
         <div class="detail-item">
-            <span class="label">Thông Điệp:</span>
+            <span class="label">Message:</span>
             <span class="value"><?php echo $notification['message']; ?></span>
         </div>
         <div class="detail-item">
-            <span class="label">Trạng Thái Đã Đọc:</span>
-            <span class="value"><?php echo $notification['is_read'] ? 'Đã Đọc' : 'Chưa Đọc'; ?></span>
+            <span class="label">Status:</span>
+            <span class="value"><?php echo $notification['is_read'] ? 'Read' : 'Unread'; ?></span>
         </div>
         <div class="detail-item">
-            <span class="label">Trạng Thái Phản Hồi:</span>
+            <span class="label">Response:</span>
             <span class="value">
                 <?php
                 if ($notification['is_accept'] === null) {
-                    echo "Chưa phản hồi";
+                    echo "in progress";
                 } elseif ($notification['is_accept'] == 1) {
-                    echo "Đã duyệt";
+                    echo "accepted";
                 } else {
-                    echo "Đã từ chối";
+                    echo "rejected";
                 }
                 ?>
             </span>
         </div>
         <div class="detail-item">
-            <span class="label">Thời Gian Tạo:</span>
+            <span class="label">Create_time:</span>
             <span class="value"><?php echo $notification['create_time']; ?></span>
         </div>
-        <a href="notice.php" class="btn">Quay Lại Danh Sách</a>
+        <a href="notice.php" class="btn">Back</a>
     </div>
 </body>
 

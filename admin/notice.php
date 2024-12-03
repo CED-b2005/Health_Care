@@ -277,7 +277,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->bind_param("s", $recipient_email);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo "<h1>Danh Sách Yêu Cầu</h1>";
+        echo "<h1>Request List</h1>";
         if ($result->num_rows > 0) {
             while ($notification = $result->fetch_assoc()) {
                 $class = $notification['is_read'] ? 'read' : '';
@@ -294,23 +294,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 echo "</div>";
                 // div chứa phản hồi
                 echo "<div class='response'>";
-                echo "<button class='approve-btn' onclick=\"updateStatus({$notification['id']}, 'approve')\">Duyệt</button>";
-                echo "<button class='reject-btn' onclick=\"updateStatus({$notification['id']}, 'reject')\">Từ chối</button>";
-                echo "<button class='approved-btn' style='display: none;'>Đã duyệt</button>";
-                echo "<button class='rejected-btn' style='display: none;'>Đã từ chối</button>";
+                echo "<button class='approve-btn' onclick=\"updateStatus({$notification['id']}, 'approve')\">Accept</button>";
+                echo "<button class='reject-btn' onclick=\"updateStatus({$notification['id']}, 'reject')\">Reject</button>";
+                echo "<button class='approved-btn' style='display: none;'>Accepted</button>";
+                echo "<button class='rejected-btn' style='display: none;'>Rejected</button>";
                 echo "</div>";
                 // Div chứa biểu tượng menu
                 echo "<div class='notification-menu'>";
                 echo "<div class='menu-icon'>⋮</div>"; // Biểu tượng menu
                 echo "<div class='options-menu'>";
-                echo "<button class='mark-as-read' onclick='sendRequest({$notification['id']})' value='{$notification['id']}' name='id'>Đánh dấu đã đọc</button>";
-                echo "<a href='detail_notice.php?id={$notification['id']}' class='other-option'>Xem Chi Tiết</a>";
+                echo "<button class='mark-as-read' onclick='sendRequest({$notification['id']})' value='{$notification['id']}' name='id'>Mark as read</button>";
+                echo "<a href='detail_notice.php?id={$notification['id']}' class='other-option'>View detail</a>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>"; // Đóng notification
             }
         } else {
-            echo "<p>Không có thông báo nào.</p>";
+            echo "<p> Notification is empty.</p>";
         }
         ?>
     </div>
