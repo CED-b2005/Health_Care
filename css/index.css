@@ -67,3 +67,28 @@ body {
   /* font-size: 30px; */
   text-align: center;
 }
+.infor__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.infor__item__number,
+.infor__title {
+  color: #007e85;
+  margin-top: 50px;
+}
+.services__list {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.service__item {
+  margin-top: 30px;
+}
+.card-img-top {
+  object-fit: cover;
+  width: 288px;
+  border-radius: 30px;
+}
