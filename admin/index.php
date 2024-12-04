@@ -80,7 +80,7 @@
                 </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-schedule">
-                        <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">Schedule</p></div></a>
+                        <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">Make Appointment</p></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row">
@@ -386,7 +386,8 @@
                                         
                                             <?php
                                             $nextweek=date("Y-m-d",strtotime("+1 week"));
-                                            $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime,schedule.nop from schedule inner join doctor on schedule.docid=doctor.docid  where schedule.scheduledate>='$today' and schedule.scheduledate<='$nextweek' order by schedule.scheduledate desc"; 
+                                            $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime
+                                             from schedule inner join doctor on schedule.docid=doctor.docid  where schedule.scheduledate>='$today' and schedule.scheduledate<='$nextweek' order by schedule.scheduledate desc"; 
                                                 $result= $database->query($sqlmain);
                 
                                                 if($result->num_rows==0){
@@ -414,7 +415,7 @@
                                                     $docname=$row["docname"];
                                                     $scheduledate=$row["scheduledate"];
                                                     $scheduletime=$row["scheduletime"];
-                                                    $nop=$row["nop"];
+                                                 
                                                     echo '<tr>
                                                         <td style="padding:20px;"> &nbsp;'.
                                                         substr($title,0,30)
