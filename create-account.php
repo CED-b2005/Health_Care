@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@ $_SESSION["user"]="";
 $_SESSION["usertype"]="";
 
 // Set the new timezone
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Asia/Vietnam');
 $date = date('Y-m-d');
 
 $_SESSION["date"]=$date;
@@ -135,7 +136,7 @@ if($_POST){
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <label for="cpassword" class="form-label">Confirm Password: </label>
+                    <label for="cpassword" class="form-label">Conform Password: </label>
                 </td>
             </tr>
             <tr>
