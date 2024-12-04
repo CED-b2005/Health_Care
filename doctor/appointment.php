@@ -90,15 +90,19 @@
     </td>
     </tr>
 
+
+
     <tr class="menu-row">
         <td class="menu-btn menu-icon-session">
-            <a href="schedule.php" class="non-style-link-menu">
+            <a href="scheduleDoc.php" class="non-style-link-menu">
                 <div>
-                    <p class="menu-text">My Sessions</p>
+                    <p class="menu-text">Make Appointments</p>
                 </div>
             </a>
         </td>
     </tr>
+
+
     <tr class="menu-row">
         <td class="menu-btn menu-icon-patient">
             <a href="patient.php" class="non-style-link-menu">
@@ -425,16 +429,7 @@
             echo     '       </select><br><br>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="nop" class="form-label">Number of Patients/Appointment Numbers : </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <input type="number" name="nop" class="input-text" min="0"  placeholder="The final appointment number for this session depends on this number" required><br>
-                                </td>
-                            </tr>
+                           
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="date" class="form-label">Session Date: </label>
