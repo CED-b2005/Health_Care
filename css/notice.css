@@ -1,0 +1,180 @@
+/* Định dạng container */
+#notification-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    /* background-color: #f9f9f9; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề chính */
+#notification-container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Thông báo */
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    /* background-color: #fff; */
+    transition: all 0.3s ease;
+}
+
+.notification:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #0A76D8;
+}
+
+/* Hình ảnh người dùng */
+.notification-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Nội dung thông báo */
+.notification-content {
+    flex: 1;
+}
+
+.notification-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #0A76D8;
+}
+
+.notification-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Phản hồi */
+.response {
+    display: flex;
+    gap: 10px;
+}
+
+.response button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.approve-btn,.reject-btn {
+    background-color:#d8ebfa;
+    color: #0A76D8;
+}
+
+.approve-btn:hover,
+.reject-btn:hover {
+    background-color:#0A76D8;
+    color: white;
+    opacity: 0.9;
+}
+
+.approved-btn{
+    background-color: #0A76D8;
+    color: #fff;
+    pointer-events: none;
+}
+.rejected-btn {
+    background-color: #6c757d;
+    color: #fff;
+    pointer-events: none;
+}
+
+/* Menu biểu tượng */
+.notification-menu {
+    position: relative;
+    margin-left: 10px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.options-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background:#d8ebfa;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.options-menu button,
+.options-menu a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    color: #0A76D8;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+.options-menu button:hover,
+.options-menu a:hover {
+    background-color: #0A76D8;
+    color: white;
+}
+
+/* Hiển thị menu khi hover */
+.notification-menu:hover .options-menu {
+    display: block;
+}
+
+/* Đã đọc */
+.notification.read {
+    background-color: #d8ebfa;
+}
+/* Badge container */
+.menu-icon-notice {
+    position: relative;
+    /* display:; */
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Badge hiển thị số lượng */
+.badge {
+    position: absolute;
+    top: 7px;
+    right: 160px;
+    background-color: #dc3545; /* Màu đỏ cho thông báo nổi bật */
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 6px;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
