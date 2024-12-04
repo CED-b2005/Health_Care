@@ -1,0 +1,10 @@
+
+.header__session {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+}
+.banner_aboutUs{
+    background-size: cover;
+    width: 80%;
+}

@@ -25,7 +25,7 @@
         text-decoration: none;
         color: black;
     }
-
+    
     .logo {
         width: 100px;
         height: 100px;
