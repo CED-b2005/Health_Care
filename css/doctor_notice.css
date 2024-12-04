@@ -1,0 +1,38 @@
+.notification-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.notification-item.unread {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.notification-item.read {
+    background-color: #ffffff;
+    font-weight: normal;
+}
+
+.notification-actions .btn {
+    margin: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.notification-actions .btn-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.notification-actions .btn-danger {
+    background-color: #f44336;
+    color: white;
+}
