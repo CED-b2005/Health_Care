@@ -41,6 +41,7 @@
         .medical-services__list {
             display: flex;
             flex-flow: row wrap;
+            padding: 0px 60px;
             /* max-width: 80%; */
         }
 
@@ -48,6 +49,7 @@
             display: flex;
             justify-content: space-around;
             width: 18rem;
+            height: 37rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             /* margin: 40px 20px; */
         }
@@ -116,22 +118,22 @@
         .modal-subtitle {
             color: #005c57;
             margin: 10px 0;
+            text-align: left;
         }
 
         .modal-list {
-            padding-left: 30px;
+            color: #005c57;
+            margin: 10px 20px;
             text-align: left;
+            list-style-type: none;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-        }
+            font-weight: bold;
 
-        .modal-form__input {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        }
+        .modal-text{
+            text-align: left;
         }
     </style>
 </head>
@@ -221,7 +223,7 @@
                                 </ul>
                                 <p class="modal-text">Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today!</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
-                                <ul class="modal-list ps-3">
+                                <ul class="modal-list">
                                     <li class="modal-list__item">Check-up: $50</li>
                                     <li class="modal-list__item">Cleaning: $75</li>
                                     <li class="modal-list__item">Teeth Whitening: $200</li>
@@ -238,12 +240,12 @@
                     <div class="medical-card" style="width: 18rem">
                         <img
                             class="medical-card__img"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://eraclinickh.com/wp-content/uploads/2023/02/Dermatology-facial-skin-treatment.png"
                             alt="Dental Treatments" />
                         <div class="medical-card__body">
                             <h5 class="medical-card__title">Dermatology Treatments</h5>
                             <p class="medical-card__text">
-                                Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today!
+                                Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today! Welcome to my hopitals.
                             </p>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#dermaModal">
                                 Learn More
@@ -271,7 +273,7 @@
                                 </ul>
                                 <p class="modal-text">Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today!</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
-                                <ul class="modal-list ps-3">
+                                <ul class="modal-list">
                                     <li class="modal-list__item">Skin Consultation: $70</li>
                                     <li class="modal-list__item">Acne Treatment: $150</li>
                                     <li class="modal-list__item">Cosmetic Procedure: Starting at $300</li>
@@ -288,7 +290,7 @@
                     <div class="medical-card" style="width: 18rem">
                         <img
                             class="medical-card__img"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq_NtDcWVmC4EJCbNEPtwIcRvbIxkJXtRKnw&s"
                             alt="Dental Treatments" />
                         <div class="medical-card__body">
                             <h5 class="medical-card__title">Anaesthetics Treatments</h5>
@@ -322,7 +324,7 @@
                                 </ul>
                                 <p class="modal-text">Our anaesthetists ensure that your surgical procedures are as comfortable and pain-free as possible. We prioritize patient safety and effective pain relief during and after surgeries.</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
-                                <ul class="modal-list ps-3">
+                                <ul class="modal-list">
                                     <li class="modal-list__item">Initial Consultation: $120</li>
                                     <li class="modal-list__item">General Anaesthesia: $500</li>
                                     <li class="modal-list__item">Regional Anaesthesia: $350</li>
@@ -338,7 +340,7 @@
                     <div class="medical-card" style="width: 18rem">
                         <img
                             class="medical-card__img"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7mXM5E3YyMNsT3QRb0Dl4iOGbKis5vsJNA&s"
                             alt="Dental Treatments" />
                         <div class="medical-card__body">
                             <h5 class="medical-card__title">Psychiatry Treatments</h5>
@@ -371,7 +373,7 @@
                                 </ul>
                                 <p class="modal-text">Our child psychiatrists provide a safe, supportive environment for your child’s mental health needs, offering personalized care and effective treatments for a wide range of emotional and behavioral issues.</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
-                                <ul class="modal-list ps-3">
+                                <ul class="modal-list">
                                     <li class="modal-list__item">Initial Consultation: $150</li>
                                     <li class="modal-list__item">Therapy Session: $100</li>
                                     <li class="modal-list__item">Follow-up Consultation: $80</li>
@@ -420,7 +422,7 @@
                                 </ul>
                                 <p class="modal-text">Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today!</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
-                                <ul class="modal-list ps-3">
+                                <ul class="modal-list">
                                     <li class="modal-list__item">Check-up: $50</li>
                                     <li class="modal-list__item">Cleaning: $75</li>
                                     <li class="modal-list__item">Teeth Whitening: $200</li>
@@ -437,12 +439,12 @@
                     <div class="medical-card" style="width: 18rem">
                         <img
                             class="medical-card__img"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7mXM5E3YyMNsT3QRb0Dl4iOGbKis5vsJNA&s"
                             alt="Dental Treatments" />
                         <div class="medical-card__body">
                             <h5 class="medical-card__title">Dermatology Treatments</h5>
                             <p class="medical-card__text">
-                                Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today!
+                                Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today!Welcome to my hopital.
                             </p>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#dermaModal">
                                 Learn More
@@ -470,7 +472,7 @@
                                 </ul>
                                 <p class="modal-text">Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today!</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
-                                <ul class="modal-list ps-3">
+                                <ul class="modal-list">
                                     <li class="modal-list__item">Skin Consultation: $70</li>
                                     <li class="modal-list__item">Acne Treatment: $150</li>
                                     <li class="modal-list__item">Cosmetic Procedure: Starting at $300</li>
@@ -487,7 +489,7 @@
                     <div class="medical-card" style="width: 18rem">
                         <img
                             class="medical-card__img"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Mg4LVpAlsuyntPeVIqtmGGLKRk09y4_RUw&s"
                             alt="Dental Treatments" />
                         <div class="medical-card__body">
                             <h5 class="medical-card__title">Anaesthetics Treatments</h5>
@@ -521,7 +523,7 @@
                                 </ul>
                                 <p class="modal-text">Our anaesthetists ensure that your surgical procedures are as comfortable and pain-free as possible. We prioritize patient safety and effective pain relief during and after surgeries.</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
-                                <ul class="modal-list ps-3">
+                                <ul class="modal-list">
                                     <li class="modal-list__item">Initial Consultation: $120</li>
                                     <li class="modal-list__item">General Anaesthesia: $500</li>
                                     <li class="modal-list__item">Regional Anaesthesia: $350</li>
@@ -536,7 +538,7 @@
                     <div class="medical-card" style="width: 18rem">
                         <img
                             class="medical-card__img"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlDXhtSn1mWZn5R56_YFdgU3nosK-vuF0-kg&s"
                             alt="Dental Treatments" />
                         <div class="medical-card__body">
                             <h5 class="medical-card__title">Psychiatry Treatments</h5>
@@ -569,7 +571,7 @@
                                 </ul>
                                 <p class="modal-text">Our child psychiatrists provide a safe, supportive environment for your child’s mental health needs, offering personalized care and effective treatments for a wide range of emotional and behavioral issues.</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
-                                <ul class="modal-list ps-3">
+                                <ul class="modal-list">
                                     <li class="modal-list__item">Initial Consultation: $150</li>
                                     <li class="modal-list__item">Therapy Session: $100</li>
                                     <li class="modal-list__item">Follow-up Consultation: $80</li>
