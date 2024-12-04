@@ -101,15 +101,18 @@
     </td>
     </tr>
 
+ 
+
     <tr class="menu-row">
         <td class="menu-btn menu-icon-session">
-            <a href="schedule.php" class="non-style-link-menu">
+            <a href="scheduleDoc.php" class="non-style-link-menu">
                 <div>
-                    <p class="menu-text">My Sessions</p>
+                    <p class="menu-text">Make Appointments</p>
                 </div>
             </a>
         </td>
     </tr>
+
     <tr class="menu-row">
         <td class="menu-btn menu-icon-patient">
             <a href="patient.php" class="non-style-link-menu">
