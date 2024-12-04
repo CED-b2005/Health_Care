@@ -6,68 +6,148 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/ContactUs.css">
 </head>
     <?php
         require_once './css/index.php';
     ?>
 <body>
-    <header>
-        <div class="header__session">
-            <div class="edoc__logo">
-                <img class="logo" src="./img/unnamed.png" alt="" />
+    <div class="contactUs_containers">
+        <header>
+            <div class="header__session">
+                <div class="edoc__logo">
+                    <img class="logo" src="./img/unnamed.png" alt="" />
+                </div>
+                <div class="header__navbar__session">
+                    <ul class="header__navbar">
+                        <li class="header__navebar__item">
+                            <a href="Home.php">Home</a>
+                        </li>
+                        <li class="header__navebar__item">
+                            <a href="Service.php">Service</a>
+                        </li>
+                        <li class="header__navebar__item">
+                            <a href="ContactUs.php">Contact Us</a>
+                        </li>
+                        <li class="header__navebar__item">
+                            <a href="Blog.php">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__login__session">
+                    <ul class="header__login">
+                        <li class="header__login__item">
+                            <button class="btn login_btn">
+                                <a href="login.php" class="non-style-link">
+                                    <p class="nav-item">LOGIN</p>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="header__login__item">
+                            <button class="btn login_btn">
+                                <a href="signup.php" class="non-style-link">
+                                    <p class="nav-item" style="padding-right: 10px;">REGISTER</p>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="header__navbar__session">
-                <ul class="header__navbar">
-                    <li class="header__navebar__item">
-                        <a href="Home.php">Home</a>
-                    </li>
-                    <li class="header__navebar__item">
-                        <a href="Service.php">Service</a>
-                    </li>
-                    <li class="header__navebar__item">
-                        <a href="ContactUs.php">Contact Us</a>
-                    </li>
-                    <li class="header__navebar__item">
-                        <a href="Blog.php">Blog</a>
-                    </li>
-                </ul>
+            <div class="hero"><img src="./img/aboutUs.png" alt="img about us "> </div>
+        </header>
+        <div class="container_contacts">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form>
+            <div class="form_group">
+                <div class="form_row">
+                <label for="first_name">First name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name">
+                </div>
+                <div class="form_row">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last_name" placeholder="Enter your last name">
+                </div>
             </div>
-            <div class="header__login__session">
-                <ul class="header__login">
-                    <li class="header__login__item">
-                        <button class="btn login_btn">
-                            <a href="login.php" class="non-style-link">
-                                <p class="nav-item">LOGIN</p>
-                            </a>
-                        </button>
-                    </li>
-                    <li class="header__login__item">
-                        <button class="btn login_btn">
-                            <a href="signup.php" class="non-style-link">
-                                <p class="nav-item" style="padding-right: 10px;">REGISTER</p>
-                            </a>
-                        </button>
-                    </li>
-                </ul>
+            <div class="form_group">
+                <div class="form_row">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form_row">
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" placeholder="Enter your phone number">
+                </div>
+            </div>
+            <div class="form_group">
+                <label for="topic">Choose a topic</label>
+                <select id="topic">
+                <option value="">Select one...</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                </select>
+            </div>
+            <div class="form_group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Type your message..."></textarea>
+            </div>
+            <div class="form_checkbox">
+                <input type="checkbox" id="terms">
+                <label for="terms">I accept the terms</label>
+            </div>
+            <button class="btn_submit_contacts">Submit</button>
+            </form>
+            <div class="newsletter">
+                <p>Subscribe to our newsletter</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
-        <img src="./img/aboutUs.png" alt="img about us ">
-    </header>
-    <div>
-        <p> Get in Touch </p>
-        <h1> Contact Us </h1>
-        <form action="/action_page.php">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John" placeholder="Enter your first name "><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe" placeholder="Enter your last name"><br><br>
-            <label for="lname">Email:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe" placeholder="Enter your email"><br><br>
-            <label for="lname">Phone number:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe" placeholder="Enter your phone number"><br><br>
-            <textarea name="messages" id=""> Messages </textarea>
-            <input type="submit" value="Submit">
-        </form> 
+        <footer class="footer">
+            <div class="logo-section">
+                <h2>Healthcare</h2>
+                <p>Copyright © 2022 BRIX Templates <br> All Rights Reserved</p>
+            </div>
+            <div class="links-section">
+                <div class="links-column">
+                    <h3>Product</h3>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Case studies</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Updates</a>
+                </div>
+                <div class="links-column">
+                    <h3>Company</h3>
+                    <a href="#">About</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Culture</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="links-column">
+                    <h3>Support</h3>
+                    <a href="#">Getting started</a>
+                    <a href="#">Help center</a>
+                    <a href="#">Server status</a>
+                    <a href="#">Report a bug</a>
+                    <a href="#">Chat support</a>
+                </div>
+                <div class="social-section">
+                    <h3>Follow us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i>🌐</i> Facebook</a>
+                        <a href="#"><i>🐦</i> Twitter</a>
+                        <a href="#"><i>📷</i> Instagram</a>
+                        <a href="#"><i>🔗</i> LinkedIn</a>
+                        <a href="#"><i>▶️</i> YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
