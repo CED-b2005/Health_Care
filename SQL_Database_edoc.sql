@@ -1,3 +1,4 @@
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
@@ -8,6 +9,7 @@
 -- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,16 +23,18 @@ SET time_zone = "+00:00";
 -- Database: `edoc`
 --
 
--- --------------------------------------------------------
+
 
 --
 -- Table structure for table `admin`
 --
 
+
 CREATE TABLE `admin` (
   `aemail` varchar(255) NOT NULL,
   `apassword` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
 
 --
 -- Dumping data for table `admin`
@@ -45,6 +49,7 @@ INSERT INTO `admin` (`aemail`, `apassword`) VALUES
 -- Table structure for table `appointment`
 --
 
+
 CREATE TABLE `appointment` (
   `appoid` int(11) NOT NULL,
   `pid` int(10) DEFAULT NULL,
@@ -52,6 +57,7 @@ CREATE TABLE `appointment` (
   `scheduleid` int(10) DEFAULT NULL,
   `appodate` date DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
 
 --
 -- Dumping data for table `appointment`
@@ -68,6 +74,7 @@ INSERT INTO `appointment` (`appoid`, `pid`, `apponum`, `scheduleid`, `appodate`)
 
 CREATE TABLE `doctor` (
   `docid` int(11) NOT NULL,
+
   `docemail` varchar(255) DEFAULT NULL,
   `docname` varchar(255) DEFAULT NULL,
   `docpassword` varchar(255) DEFAULT NULL,
@@ -75,6 +82,7 @@ CREATE TABLE `doctor` (
   `doctel` varchar(15) DEFAULT NULL,
   `specialties` int(2) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
 
 --
 -- Dumping data for table `doctor`
@@ -91,6 +99,7 @@ INSERT INTO `doctor` (`docid`, `docemail`, `docname`, `docpassword`, `docnic`, `
 
 CREATE TABLE `patient` (
   `pid` int(11) NOT NULL,
+
   `pemail` varchar(255) DEFAULT NULL,
   `pname` varchar(255) DEFAULT NULL,
   `ppassword` varchar(255) DEFAULT NULL,
@@ -99,6 +108,7 @@ CREATE TABLE `patient` (
   `pdob` date DEFAULT NULL,
   `ptel` varchar(15) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
 
 --
 -- Dumping data for table `patient`
@@ -215,6 +225,7 @@ CREATE TABLE `webuser` (
   `usertype` char(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+
 --
 -- Dumping data for table `webuser`
 --
@@ -224,6 +235,7 @@ INSERT INTO `webuser` (`email`, `usertype`) VALUES
 ('doctor@edoc.com', 'd'),
 ('patient@edoc.com', 'p'),
 ('emhashenudara@gmail.com', 'p');
+
 
 --
 -- Indexes for dumped tables
@@ -302,6 +314,7 @@ ALTER TABLE `patient`
 --
 ALTER TABLE `schedule`
   MODIFY `scheduleid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
