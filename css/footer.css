@@ -1,0 +1,122 @@
+.footer {
+
+    background-color: #004d4d; 
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    overflow-x: auto; /* Cho phép cuộn ngang nếu không gian hẹp */
+    white-space: nowrap; /* Đảm bảo không xuống dòng */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho chiều sâu */
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: nowrap; /* Không cho phép xuống hàng */
+    justify-content: space-between; /* Căn đều khoảng cách giữa các cột */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    margin: 0 auto;
+    max-width: 1200px; /* Giới hạn chiều rộng để không bị quá rộng */
+}
+
+.footer-column {
+    flex: 1;
+
+    min-width: 150px; /* Đảm bảo không bị quá hẹp */
+    max-width: 300px; /* Hạn chế kích thước tối đa */
+    padding: 0 15px; /* Tạo khoảng cách giữa các cột */
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #00e0d4; /* Màu nhấn cho tiêu đề */
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.footer-column ul li {
+
+    margin-bottom: 12px; /* Khoảng cách giữa các mục */
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+
+    transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+.footer-column ul li a:hover {
+    color: #00e0d4; /* Màu sắc khi hover */
+    text-decoration: underline; /* Thêm gạch dưới khi hover */
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; Khoảng cách giữa các nút */
+    align-items: center;
+}
+
+.social-links li {
+
+    display: flex; /* Đặt biểu tượng và chữ cạnh nhau */
+    align-items: center;
+    margin-bottom: 0; /* Xóa khoảng cách thừa */
+}
+
+.social-links li a {
+    display: flex; /* Bố cục ngang giữa icon và text */
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px; /* Kích thước văn bản */
+    color: white; /* Màu chữ */
+    padding:0px 6px; /* Tạo không gian bên trong nút */
+    transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+
+.social-links li a:hover {
+    background-color: #00e0d4; /* Màu nền khi hover */
+    color: #f0f4f4; /* Màu chữ khi hover */
+    transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+}
+
+.social-links li i {
+    margin-right: 10px; /* Khoảng cách giữa biểu tượng và chữ */
+    font-size: 18px; /* Kích thước biểu tượng */
+}
+
+@media (max-width: 768px) {
+    .footer .container {
+
+        flex-direction: column; /* Chuyển các cột thành hàng trên màn hình nhỏ */
+        align-items: center;
+    }
+
+    .footer-column {
+
+        text-align: center; /* Căn giữa các cột */
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+
+        flex-direction: column; /* Xếp dọc các nút xã hội */
+        gap: 10px; /* Giảm khoảng cách */
+    }
+
+    .social-links li a {
+        padding: 10px 15px; /* Giảm kích thước nút */
+    }
+}

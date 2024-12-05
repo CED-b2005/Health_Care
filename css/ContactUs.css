@@ -110,129 +110,34 @@ body {
     background-color: #005f52;
 }
 
-.newsletter {
+.newsletters {
     text-align: center;
     margin-top: 50px;
 }
-
-.newsletter p {
+.frm_text{
+    margin-top: 40px;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 15px;
 }
-
-.newsletter form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.newsletter input {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
+.newsletters button{
+    width: 90px;
+    background-color: #63aea4;
     border-radius: 5px;
-    flex: 1;
-}
-
-.newsletter button {
-    padding: 10px 20px;
-    background-color: #007f6b;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 12px;
 }
-
-.newsletter button:hover {
-    background-color: #005f52;
-}
-
-.footer {
+.newsletters button:hover{
     background-color: #007f6b;
-    color: #ffffff;
-    padding: 40px 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
-
-.footer .logo-section {
-    flex: 1;
-    min-width: 200px;
+.newsletters input[type="email"]{
+    width: 65%;
+    padding: 11px;
+    border: 1px solid #00a899;
+    border-radius: 5px;  
 }
+.newsletters input[type="email"]:focus{
+    box-shadow: 0 0 3px rgba(0, 127, 107, 0.5);
+    outline: none;
 
-.footer .logo-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.footer .logo-section p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.footer .links-section {
-    display: flex;
-    flex: 2;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    min-width: 200px;
-}
-
-.footer .links-column {
-    margin: 0 20px;
-    min-width: 120px;
-}
-
-.footer .links-column h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.footer .links-column a {
-    display: block;
-    font-size: 14px;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
-
-.footer .links-column a:hover {
-    text-decoration: underline;
-}
-
-.footer .social-section {
-    min-width: 150px;
-}
-
-.footer .social-section h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.footer .social-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.footer .social-icons a {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer .social-icons a:hover {
-    text-decoration: underline;
-}
-
-.footer .social-icons a i {
-    margin-right: 8px;
 }

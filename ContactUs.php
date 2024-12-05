@@ -6,55 +6,55 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/ContactUs.css">
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
     <?php
         require_once './css/index.php';
+        require_once './css/blogs.php';
     ?>
 <body>
     <div class="contactUs_containers">
-        <header>
-            <div class="header__session">
-                <div class="edoc__logo">
-                    <img class="logo" src="./img/unnamed.png" alt="" />
-                </div>
-                <div class="header__navbar__session">
-                    <ul class="header__navbar">
-                        <li class="header__navebar__item">
-                            <a href="Home.php">Home</a>
-                        </li>
-                        <li class="header__navebar__item">
-                            <a href="Service.php">Service</a>
-                        </li>
-                        <li class="header__navebar__item">
-                            <a href="ContactUs.php">Contact Us</a>
-                        </li>
-                        <li class="header__navebar__item">
-                            <a href="Blog.php">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header__login__session">
-                    <ul class="header__login">
-                        <li class="header__login__item">
-                            <button class="btn login_btn">
-                                <a href="login.php" class="non-style-link">
-                                    <p class="nav-item">LOGIN</p>
-                                </a>
-                            </button>
-                        </li>
-                        <li class="header__login__item">
-                            <button class="btn login_btn">
-                                <a href="signup.php" class="non-style-link">
-                                    <p class="nav-item" style="padding-right: 10px;">REGISTER</p>
-                                </a>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+    <header>
+        <div class="header__session">
+            <div class="edoc__logo">
+                <img class="logo" src="./img/unnamed.png" alt="Logo" />
             </div>
-            <div class="hero"><img src="./img/aboutUs.png" alt="img about us "> </div>
-        </header>
+            <div class="header__navbar__session">
+                <ul class="header__navbar">
+                    <li class="header__navbar__item">
+                        <a href="Home.php">Home</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="Service.php">Service</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="ContactUs.php">Contact Us</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="Blog.php">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__login__session">
+                <ul class="header__login">
+                    <li class="header__login__item">
+                        <a href="login.php" class="non-style-link">
+                            <p class="nav-item">LOGIN</p>
+                        </a>
+                    </li>
+                    <li class="header__login__item">
+                        <a href="signup.php" class="non-style-link">
+                            <p class="nav-item">REGISTER</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="hero"><img src="./img/aboutUs.png" alt="img about us "> </div>
         <div class="container_contacts">
             <h1>Contact Us</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -98,8 +98,8 @@
             </div>
             <button class="btn_submit_contacts">Submit</button>
             </form>
-            <div class="newsletter">
-                <p>Subscribe to our newsletter</p>
+            <p class="frm_text">Subscribe to our newsletter</p>
+            <div class="newsletters">
                 <form>
                     <input type="email" placeholder="Enter your email">
                     <button type="submit">Subscribe</button>
@@ -107,44 +107,50 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="logo-section">
-                <h2>Healthcare</h2>
-                <p>Copyright © 2022 BRIX Templates <br> All Rights Reserved</p>
-            </div>
-            <div class="links-section">
-                <div class="links-column">
-                    <h3>Product</h3>
-                    <a href="#">Features</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Case studies</a>
-                    <a href="#">Reviews</a>
-                    <a href="#">Updates</a>
+            <div class="container">
+                <div class="footer-column">
+                    <h4>Healthcare</h4>
+                    <p>&copy; 2022 BRIX<br>All Rights Reserved</p>
                 </div>
-                <div class="links-column">
-                    <h3>Company</h3>
-                    <a href="#">About</a>
-                    <a href="#">Contact us</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Culture</a>
-                    <a href="#">Blog</a>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
                 </div>
-                <div class="links-column">
-                    <h3>Support</h3>
-                    <a href="#">Getting started</a>
-                    <a href="#">Help center</a>
-                    <a href="#">Server status</a>
-                    <a href="#">Report a bug</a>
-                    <a href="#">Chat support</a>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
                 </div>
-                <div class="social-section">
-                    <h3>Follow us</h3>
-                    <div class="social-icons">
-                        <a href="#"><i>🌐</i> Facebook</a>
-                        <a href="#"><i>🐦</i> Twitter</a>
-                        <a href="#"><i>📷</i> Instagram</a>
-                        <a href="#"><i>🔗</i> LinkedIn</a>
-                        <a href="#"><i>▶️</i> YouTube</a>
-                    </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Server Status</a></li>
+                        <li><a href="#">Report a Bug</a></li>
+                        <li><a href="#">Chat Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
