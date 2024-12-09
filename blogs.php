@@ -23,23 +23,23 @@
         require_once './css/blogs.php';
         ?>
 <body>
-        <header>
+<header>
             <div class="header__session">
                 <div class="edoc__logo">
-                    <img class="logo" src="./img/unnamed.png" alt="" />
+                    <img class="logo" src="./img/unnamed.png" alt="Logo" />
                 </div>
                 <div class="header__navbar__session">
                     <ul class="header__navbar">
-                        <li class="header__navebar__item">
+                        <li class="header__navbar__item">
                             <a href="Home.php">Home</a>
                         </li>
-                        <li class="header__navebar__item">
+                        <li class="header__navbar__item">
                             <a href="Service.php">Service</a>
                         </li>
-                        <li class="header__navebar__item">
+                        <li class="header__navbar__item">
                             <a href="ContactUs.php">Contact Us</a>
                         </li>
-                        <li class="header__navebar__item">
+                        <li class="header__navbar__item">
                             <a href="Blog.php">Blog</a>
                         </li>
                     </ul>
@@ -47,18 +47,14 @@
                 <div class="header__login__session">
                     <ul class="header__login">
                         <li class="header__login__item">
-                            <button class="btn login_btn">
-                                <a href="login.php" class="non-style-link">
-                                    <p class="nav-item">LOGIN</p>
-                                </a>
-                            </button>
+                            <a href="login.php" class="non-style-link">
+                                <p class="nav-item">LOGIN</p>
+                            </a>
                         </li>
                         <li class="header__login__item">
-                            <button class="btn login_btn">
-                                <a href="signup.php" class="non-style-link">
-                                    <p class="nav-item" style="padding-right: 10px;">REGISTER</p>
-                                </a>
-                            </button>
+                            <a href="signup.php" class="non-style-link">
+                                <p class="nav-item">REGISTER</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
