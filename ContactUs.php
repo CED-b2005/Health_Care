@@ -18,42 +18,42 @@
 <body>
     <div class="contactUs_containers">
     <header>
-        <div class="header__session">
-            <div class="edoc__logo">
-                <img class="logo" src="./img/unnamed.png" alt="Logo" />
+            <div class="header__session">
+                <div class="edoc__logo">
+                    <img class="logo" src="./img/unnamed.png" alt="Logo" />
+                </div>
+                <div class="header__navbar__session">
+                    <ul class="header__navbar">
+                        <li class="header__navbar__item">
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="Service.php">Service</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="ContactUs.php">Contact Us</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="blogs.php">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__login__session">
+                    <ul class="header__login">
+                        <li class="header__login__item">
+                            <a href="login.php" class="non-style-link">
+                                <p class="nav-item">LOGIN</p>
+                            </a>
+                        </li>
+                        <li class="header__login__item">
+                            <a href="signup.php" class="non-style-link">
+                                <p class="nav-item">REGISTER</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="header__navbar__session">
-                <ul class="header__navbar">
-                    <li class="header__navbar__item">
-                        <a href="Home.php">Home</a>
-                    </li>
-                    <li class="header__navbar__item">
-                        <a href="Service.php">Service</a>
-                    </li>
-                    <li class="header__navbar__item">
-                        <a href="ContactUs.php">Contact Us</a>
-                    </li>
-                    <li class="header__navbar__item">
-                        <a href="Blog.php">Blog</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__login__session">
-                <ul class="header__login">
-                    <li class="header__login__item">
-                        <a href="login.php" class="non-style-link">
-                            <p class="nav-item">LOGIN</p>
-                        </a>
-                    </li>
-                    <li class="header__login__item">
-                        <a href="signup.php" class="non-style-link">
-                            <p class="nav-item">REGISTER</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        </header>
     <div class="hero"><img src="./img/aboutUs.png" alt="img about us "> </div>
         <div class="container_contacts">
             <h1>Contact Us</h1>

@@ -144,7 +144,7 @@
 
 <body>
     <div class="full-height">
-        <header>
+    <header>
             <div class="header__session">
                 <div class="edoc__logo">
                     <img class="logo" src="./img/unnamed.png" alt="Logo" />
@@ -155,13 +155,13 @@
                             <a href="index.php">Home</a>
                         </li>
                         <li class="header__navbar__item">
-                            <a href="Service.php">Service</a>
+                            <a href="service.php">Service</a>
                         </li>
                         <li class="header__navbar__item">
                             <a href="ContactUs.php">Contact Us</a>
                         </li>
                         <li class="header__navbar__item">
-                            <a href="Blog.php">Blog</a>
+                            <a href="blogs.php">Blog</a>
                         </li>
                     </ul>
                 </div>

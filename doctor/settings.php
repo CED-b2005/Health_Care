@@ -76,7 +76,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <a href="../logout.php"><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                    <a href="../index.php"><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
                                 </td>
                             </tr>
                         </table>
@@ -121,16 +121,7 @@
             </a></div>
         </td>
     </tr>
-    <tr class="menu-row">
-        <td class="menu-btn menu-icon-notice menu-active menu-icon-notice">
-            <a href="notice.php" class="non-style-link-menu non-style-link-menu-active">
-                <a href="doctor_notice.php" class="non-style-link-menu">
-                    <div class="d-flex">
-                        <p class="menu-text">My Notice
-                        </p>
-                </a></div>
-        </td>
-    </tr>
+
     <tr class="menu-row">
         <td class="menu-btn menu-icon-settings  menu-active menu-icon-settings-active">
             <a href="settings.php" class="non-style-link-menu non-style-link-menu-active">
@@ -248,7 +239,7 @@
                             <tr>
                                 <td style="width: 25%;">
                                     <a href="?action=drop&id=<?php echo $userid . '&name=' . $username ?>" class="non-style-link">
-                                        <div class="dashboard-items setting-tabs" style="padding:20px;margin:auto;width:95%;display: flex;">
+                                        <!-- <div class="dashboard-items setting-tabs" style="padding:20px;margin:auto;width:95%;display: flex;">
                                             <div class="btn-icon-back dashboard-icons-setting" style="background-image: url('../img/icons/patients-hover.svg');"></div>
                                             <div>
                                                 <div class="h1-dashboard" style="color: #ff5050;">
@@ -260,7 +251,7 @@
                                                 </div>
                                             </div>
 
-                                        </div>
+                                        </div> -->
                                     </a>
                                 </td>
 

@@ -20,7 +20,7 @@
 </html>
     <?php
         require_once './css/index.php';
-        require_once './css/blog.php';
+        require_once './css/blogs.php';
     ?>
 <body>
 <header>
@@ -31,7 +31,7 @@
                 <div class="header__navbar__session">
                     <ul class="header__navbar">
                         <li class="header__navbar__item">
-                            <a href="Home.php">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li class="header__navbar__item">
                             <a href="Service.php">Service</a>

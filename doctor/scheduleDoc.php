@@ -58,7 +58,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                <a href="../index.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
                                 </td>
                             </tr>
                     </table>
@@ -106,16 +106,7 @@
             </a></div>
         </td>
     </tr>
-    <tr class="menu-row">
-        <td class="menu-btn menu-icon-notice menu-active menu-icon-notice">
-            <a href="notice.php" class="non-style-link-menu non-style-link-menu-active">
-            <a href="doctor_notice.php" class="non-style-link-menu">
-                <div class="d-flex">
-                    <p class="menu-text">My Notice
-                    </p>
-            </a></div>
-        </td>
-    </tr>
+
     <tr class="menu-row">
         <td class="menu-btn menu-icon-settings">
             <a href="settings.php" class="non-style-link-menu">

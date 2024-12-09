@@ -288,7 +288,7 @@
                 <div class="header__navbar__session">
                     <ul class="header__navbar">
                         <li class="header__navbar__item">
-                            <a href="Home.php">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li class="header__navbar__item">
                             <a href="Service.php">Service</a>
@@ -297,7 +297,7 @@
                             <a href="ContactUs.php">Contact Us</a>
                         </li>
                         <li class="header__navbar__item">
-                            <a href="Blog.php">Blog</a>
+                            <a href="blogs.php">Blog</a>
                         </li>
                     </ul>
                 </div>
