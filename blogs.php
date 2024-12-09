@@ -18,10 +18,10 @@
         </style>
     </head>
 </html>
-<?php
+    <?php
         require_once './css/index.php';
-        require_once './css/blogs.php';
-        ?>
+        require_once './css/blog.php';
+    ?>
 <body>
 <header>
             <div class="header__session">

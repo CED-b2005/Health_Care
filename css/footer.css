@@ -6,13 +6,11 @@
     text-align: center;
     overflow-x: auto; /* Cho phép cuộn ngang nếu không gian hẹp */
     white-space: nowrap; /* Đảm bảo không xuống dòng */
-    border-top: 4px solid #00e0d4; /* Đường viền trên đẹp mắt */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho chiều sâu */
 }
 
 .footer .container {
     display: flex;
-
     flex-wrap: nowrap; /* Không cho phép xuống hàng */
     justify-content: space-between; /* Căn đều khoảng cách giữa các cột */
     gap: 20px; /* Khoảng cách giữa các cột */
@@ -31,7 +29,6 @@
 .footer-column h4 {
     margin-bottom: 15px;
     font-size: 18px;
-
     color: #00e0d4; /* Màu nhấn cho tiêu đề */
     font-weight: bold;
 }

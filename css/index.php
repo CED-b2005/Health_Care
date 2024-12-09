@@ -18,7 +18,6 @@
 
     .header__navbar__item {
         margin-right: 60px;
-        background-color: #ffffff;
         /* Giảm khoảng cách giữa các mục trong navbar */
     }
 
@@ -31,11 +30,9 @@
     }
 
     .header__navbar__item>a:hover {
-        color: #ffff;
-        background-color: #005c57;
-        /* Màu sắc khi hover */
+        color:brown;
     }
-
+    
     .logo {
         width: 100px;
         height: 100px;
@@ -51,7 +48,8 @@
         font-size: 16px;
         font-weight: 500;
     }
-
+    
+    
     .header__navbar__session {
         display: flex;
         align-items: center;
@@ -209,7 +207,7 @@
     }
 
     .testimonial-card {
-        background-color: #fff;
+        /* background-color: #fff; */
         padding: 20px;
         border-radius: 10px;
         text-align: center;

@@ -96,7 +96,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: rgb(239, 248, 255);
             color: #333;
             line-height: 1.6;
         }

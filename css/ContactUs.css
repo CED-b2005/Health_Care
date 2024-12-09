@@ -1,0 +1,143 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+.hero img {
+    width: 1270px;
+    margin-left: 5px;
+}
+.container_contacts {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container_contacts h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container_contacts p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form_group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form_group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form_group input,
+.form_group select,
+.form_group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #00a899;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form_group input:focus,
+.form_group select:focus,
+.form_group textarea:focus {
+    border-color: #007f6b;
+    box-shadow: 0 0 3px rgba(0, 127, 107, 0.5);
+}
+
+.form_row {
+    width: calc(50% - 7.5px);
+}
+
+.form_row-full {
+    width: 100%;
+}
+
+.form_group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form_checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form_checkbox input {
+    margin-right: 10px;
+}
+
+.form_checkbox label {
+    font-size: 14px;
+}
+
+.btn_submit_contacts{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007f6b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_submit_contacts:hover {
+    background-color: #005f52;
+}
+
+.newsletters {
+    text-align: center;
+    margin-top: 50px;
+}
+.frm_text{
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.newsletters button{
+    width: 90px;
+    background-color: #63aea4;
+    border-radius: 5px;
+    border: none;
+    padding: 12px;
+}
+.newsletters button:hover{
+    background-color: #007f6b;
+}
+.newsletters input[type="email"]{
+    width: 65%;
+    padding: 11px;
+    border: 1px solid #00a899;
+    border-radius: 5px;  
+}
+.newsletters input[type="email"]:focus{
+    box-shadow: 0 0 3px rgba(0, 127, 107, 0.5);
+    outline: none;
+
+}

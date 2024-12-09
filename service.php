@@ -25,7 +25,9 @@
         table {
             animation: transitionIn-Y-bottom 0.5s;
         }
-
+        body{
+            background-color: rgb(239, 248, 255);
+        }
         /* General styles */
         .medical-services {
             background-color: #f8f9fa;
@@ -67,7 +69,9 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 40px 20px;
         }
-
+        .medical-card__text button {
+            border: none;
+        }
         .medical-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -197,7 +201,7 @@
                             <p class="medical-card__text">
                                 We offer a variety of dental treatments including routine check-ups, fillings, cleaning, and more advanced procedures like root canals and teeth whitening. Welcome to my services
                             </p>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#dentalModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#dentalModal" style="border:none; line-height:30px">
                                 Learn More
                             </button>
                         </div>
@@ -247,7 +251,7 @@
                             <p class="medical-card__text">
                                 Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today! Welcome to my hopitals.
                             </p>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#dermaModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#dermaModal"style="border:none; line-height:30px">
                                 Learn More
                             </button>
                         </div>
@@ -298,7 +302,7 @@
                                 Our anaesthetists ensure that your surgical procedures are as comfortable and pain-free as possible. We prioritize patient safety and effective pain relief during and after surgeries.
 
                             </p>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#anaestheticsModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#anaestheticsModal" style="border:none; line-height:30px">
                                 Learn More
                             </button>
                         </div>
@@ -347,7 +351,7 @@
                             <p class="medical-card__text">
                                 Our child psychiatrists provide a safe, supportive environment for your child’s, offering personalized care and effective treatments for a wide range of emotional and behavioral issues.
                             </p>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#dentalModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#dentalModal" style="border:none; line-height:30px">
                                 Learn More
                             </button>
                         </div>
@@ -396,7 +400,7 @@
                             <p class="medical-card__text">
                                 We offer a variety of dental treatments including routine check-ups, fillings, cleaning, and more advanced procedures like root canals and teeth whitening. Welcome to my services
                             </p>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#dentalModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#dentalModal" style="border:none; line-height:30px">
                                 Learn More
                             </button>
                         </div>
@@ -446,7 +450,7 @@
                             <p class="medical-card__text">
                                 Our experienced dental team ensures that you receive the best possible care in a comfortable and friendly environment. Schedule an appointment with us today!Welcome to my hopital.
                             </p>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#dermaModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#dermaModal" style="border:none; line-height:30px">
                                 Learn More
                             </button>
                         </div>
@@ -492,12 +496,12 @@
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Mg4LVpAlsuyntPeVIqtmGGLKRk09y4_RUw&s"
                             alt="Dental Treatments" />
                         <div class="medical-card__body">
-                            <h5 class="medical-card__title">Anaesthetics Treatments</h5>
+                            <h5 class="medical-card__title">Anaesthetic Treatments</h5>
                             <p class="medical-card__text">
-                                Our anaesthetists ensure that your surgical procedures are as comfortable and pain-free as possible. We prioritize patient safety and effective pain relief during and after surgeries.
+                                Our anaesthetist ensure that your surgical procedures are as comfortable and pain-free as possible. We prioritize patient safety and effective pain relief during and after surgeries.
 
                             </p>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#anaestheticsModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#anaestheticsModal" style="border:none; line-height:30px">
                                 Learn More
                             </button>
                         </div>
@@ -509,11 +513,11 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="anaestheticsModalLabel">Anaesthetics Treatments</h5>
+                                <h5 class="modal-title" id="anaestheticsModalLabel">Anaesthetic Treatments</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body p-4">
-                                <h6 class="modal-subtitle">Types of Anaesthetics Services We Provide:</h6>
+                                <h6 class="modal-subtitle">Types of Anaesthetic Services We Provide:</h6>
                                 <ul class="modal-list">
                                     <li class="modal-list__item">General Anaesthesia</li>
                                     <li class="modal-list__item">Local Anaesthesia</li>
@@ -521,7 +525,7 @@
                                     <li class="modal-list__item">Sedation for Minor Procedures</li>
                                     <li class="modal-list__item">Pain Management</li>
                                 </ul>
-                                <p class="modal-text">Our anaesthetists ensure that your surgical procedures are as comfortable and pain-free as possible. We prioritize patient safety and effective pain relief during and after surgeries.</p>
+                                <p class="modal-text">Our anaesthetist ensure that your surgical procedures are as comfortable and pain-free as possible. We prioritize patient safety and effective pain relief during and after surgeries.</p>
                                 <h6 class="modal-subtitle">Pricing:</h6>
                                 <ul class="modal-list">
                                     <li class="modal-list__item">Initial Consultation: $120</li>
@@ -543,9 +547,9 @@
                         <div class="medical-card__body">
                             <h5 class="medical-card__title">Psychiatry Treatments</h5>
                             <p class="medical-card__text">
-                                Our child psychiatrists provide a safe, supportive environment for your child’s, offering personalized care and effective treatments for a wide range of emotional and behavioral issues.
+                                Our child psychiatrists provide a safe, supportive environment for your child, offering personalized care and effective treatments for a wide range of emotional and behavioral issues.
                             </p>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#dentalModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#dentalModal" style="border:none; line-height:30px">
                                 Learn More
                             </button>
                         </div>
