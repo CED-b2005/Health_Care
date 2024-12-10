@@ -306,8 +306,8 @@
                         <div class="content">
 
                         </div>
-                        <div style="display: flex;justify-content: center;">
-                        <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
+                        <div style="display: flex;justify-content: center; height: 500px; overflow-y: auto">
+                        <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0" >
                         
                             <tr>
                                 <td>
