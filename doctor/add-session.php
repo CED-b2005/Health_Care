@@ -21,7 +21,7 @@
         $time=$_POST["time"];
         $sql="insert into schedule (docid,title,scheduledate,scheduletime) values ($docid,'$title','$date','$time');";
         $result= $database->query($sql);
-        header("location: schedule.php?action=session-added&title=$title");
+        header("location: scheduleDoc.php?action=session-added&title=$title");
         
     }
 
