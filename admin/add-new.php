@@ -155,7 +155,8 @@
             $result= $database->query("select * from webuser where email='$email';");
             if($result->num_rows==1){
                 $error='1';
-            }else{
+            }
+            else{
 
                 $sql1="insert into doctor(docemail,docname,docpassword,docnic,doctel,specialties) values('$email','$name','$password','$nic','$tele',$spec);";
                 $sql2="insert into webuser values('$email','d')";
@@ -178,7 +179,7 @@
                     $mail->addAddress($email, $name);
 
                     $mail->isHTML(true);
-                    $mail->Subject = 'Tài khoản bác sĩ mới của bạn';
+                    $mail->Subject = 'Welcome you to Edoc hospital';
                     $mail->Body    = 'Chào ' . $name . ',<br><br>Tài khoản của bạn đã được tạo thành công.<br>Email: ' . $email . '<br>Mật khẩu: ' . $password . '<br><br>Vui lòng đổi mật khẩu sau khi đăng nhập.';
 
                     $mail->send();
