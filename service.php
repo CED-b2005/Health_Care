@@ -592,7 +592,6 @@
         <div class="container">
             <div class="footer-column">
                 <h4>Healthcare</h4>
-                <p>&copy; 2022 BRIX<br>All Rights Reserved</p>
             </div>
             <div class="footer-column">
                 <h4>Product</h4>

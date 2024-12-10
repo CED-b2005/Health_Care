@@ -389,7 +389,7 @@
                     <div class="card" style="width: 18rem">
                         <img
                             class="card-img-top"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://i.ytimg.com/vi/MgWdvaKvGQ8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBUT9VtfWjKHkuT79UNpkzcBm9cjQ"
                             alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Bones treatments</h5>
@@ -405,7 +405,7 @@
                     <div class="card" style="width: 18rem">
                         <img
                             class="card-img-top"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://toplist.vn/images/800px/phong-kham-tin-duc-983463.jpg"
                             alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Diagnosis</h5>
@@ -421,7 +421,7 @@
                     <div class="card" style="width: 18rem">
                         <img
                             class="card-img-top"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://careplusvn.com/files/kham-suc-khoe-dinh-ky-o-dau-tot-5.jpg"
                             alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Cardiology</h5>
@@ -437,7 +437,7 @@
                     <div class="card" style="width: 18rem">
                         <img
                             class="card-img-top"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://khambenhtainha.com.vn/wp-content/uploads/2020/07/khoa-nhi1.jpg"
                             alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Surgery</h5>
@@ -453,10 +453,42 @@
                     <div class="card" style="width: 18rem">
                         <img
                             class="card-img-top"
-                            src="./img/dentist-checking-patients-teeth.jpg"
+                            src="https://media.istockphoto.com/id/1189362136/vi/anh/b%C3%A1c-s%C4%A9-m%E1%BA%AFt-v%E1%BB%9Bi-n%E1%BB%AF-b%E1%BB%87nh-nh%C3%A2n-trong-m%E1%BB%99t-cu%E1%BB%99c-ki%E1%BB%83m-tra-t%E1%BA%A1i-ph%C3%B2ng-kh%C3%A1m-hi%E1%BB%87n-%C4%91%E1%BA%A1i.jpg?s=612x612&w=0&k=20&c=hejFnkFnbkZlNdAyfRlTNHrsAV-RtFzelpyHhoxeZuk="
                             alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Eye care</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make
+                                up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="card" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="https://medlatec.vn/media/14311/content/20200806_chup-MRI-dau-3.jpg"
+                            alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">Head care</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make
+                                up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="card" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="https://ngochong.com.vn/wp-content/uploads/2024/02/noi-soi-mui-1200x800.jpg"
+                            alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">Nose examination</h5>
                             <p class="card-text">
                                 Some quick example text to build on the card title and make
                                 up the bulk of the card's content.
@@ -528,7 +560,6 @@
     <div class="container">
         <div class="footer-column">
             <h4>Healthcare</h4>
-            <p>&copy; 2022 BRIX<br>All Rights Reserved</p>
         </div>
         <div class="footer-column">
             <h4>Product</h4>

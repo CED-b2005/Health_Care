@@ -236,8 +236,6 @@
                                         
                                     
                                     ';
-                                     
-
                                     echo '
                                     <td style="width: 50%;" rowspan="2">
                                             <div  class="dashboard-items search-items"  >
@@ -257,7 +255,6 @@
                                                             Session Title: '.$title.'<br>
                                                             Session Scheduled Date: '.$scheduledate.'<br>
                                                             Session Starts : '.$scheduletime.'<br>
-                                                            Channeling fee : <b>LKR.2 000.00</b>
 
                                                         </div>
                                                         <br>
