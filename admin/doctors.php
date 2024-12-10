@@ -415,14 +415,14 @@
                 );
                 if($error_1!='4'){
                 echo '
-            <div id="popup1" class="overlay">
-                    <div class="popup">
+            <div id="popup1" class="overlay" >
+                    <div class="popup" style="height: 500px; overflow: auto;">
                     <center>
                     
                         <a class="close" href="doctors.php">&times;</a> 
                         <div style="display: flex;justify-content: center;">
                         <div class="abc">
-                        <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
+                        <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0"> 
                         <tr>
                                 <td class="label-td" colspan="2">'.
                                     $errorlist[$error_1]

@@ -44,6 +44,7 @@
             display: flex;
             flex-flow: row wrap;
             padding: 0px 60px;
+            justify-content: center;
             /* max-width: 80%; */
         }
 
