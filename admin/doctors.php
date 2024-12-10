@@ -555,7 +555,7 @@
                                     
                                     
                                 </div>
-                                <div style="display: flex;justify-content: center;">
+                                <div style="display: flex;justify-content: center; height: 380px; overflow-y: auto">
                                 
                                 <a href="doctors.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;OK&nbsp;&nbsp;</font></button></a>
 
@@ -597,7 +597,7 @@
                             <center>
                             
                                 <a class="close" href="doctors.php">&times;</a> 
-                                <div style="display: flex;justify-content: center;">
+                                <div style="display: flex;justify-content: center; height: 380px; overflow-y: auto">
                                 <div class="abc">
                                 <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
                                 <tr>

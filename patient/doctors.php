@@ -268,7 +268,7 @@
                                         
                                         <a href="?action=view&id=' . $docid . '" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
                                        &nbsp;&nbsp;&nbsp;
-                                       <a href="?action=session&id=' . $docid . '&name=' . $name . '"  class="non-style-link"><button  class="btn-primary-soft btn button-icon menu-icon-session-active"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                       <a href="?action=session&id=' . $docid . '&name=' . $name . '"  class="non-style-link"><button  class="btn-primary-soft btn button-icon menu-icon-session-active"  style="display: none; padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
                                         </div>
                                         </td>
                                     </tr>';
@@ -298,7 +298,7 @@
         if ($action == 'drop') {
             $nameget = $_GET["name"];
             echo '
-            <div id="popup1" class="overlay">
+            <div id="popup1" class="overlay" style = "background: lightblue">
                     <div class="popup">
                     <center>
                         <h2>Are you sure?</h2>
@@ -307,7 +307,7 @@
                             You want to delete this record<br>(' . substr($nameget, 0, 40) . ').
                             
                         </div>
-                        <div style="display: flex;justify-content: center;">
+                        <div style="display: flex;justify-content: center; height: 600px; overflow-y: auto">
                         <a href="delete-doctor.php?id=' . $id . '" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
                         <a href="doctors.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;No&nbsp;&nbsp;</font></button></a>
 
@@ -337,7 +337,7 @@
             $nic = $row['docnic'];
             $tele = $row['doctel'];
             echo '
-            <div id="popup1" class="overlay">
+            <div id="popup1" class="overlay" style = "background: lightblue">
                     <div class="popup">
                     <center>
                         <h2></h2>
@@ -346,7 +346,7 @@
                             eDoc Web App<br>
                             
                         </div>
-                        <div style="display: flex;justify-content: center;">
+                        <div style="display: flex;justify-content: center; height: 600px; overflow-y: auto">
                         <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
                         
                             <tr>
@@ -428,7 +428,7 @@
         } elseif ($action == 'session') {
             $name = $_GET["name"];
             echo '
-            <div id="popup1" class="overlay">
+            <div id="popup1" class="overlay" style = "background: lightblue">
                     <div class="popup">
                     <center>
                         <h2>Redirect to Doctors sessions?</h2>
@@ -490,12 +490,12 @@
 
         if ($error_1 != '4') {
             echo '
-                    <div id="popup1" class="overlay">
+                    <div id="popup1" class="overlay" style = "background: lightblue">
                             <div class="popup">
                             <center>
                             
                                 <a class="close" href="doctors.php">&times;</a> 
-                                <div style="display: flex;justify-content: center;">
+                                <div style="display: flex;justify-content: center; height: 600px; overflow-y: auto">
                                 <div class="abc">
                                 <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
                                 <tr>
@@ -622,7 +622,7 @@
                     ';
         } else {
             echo '
-                <div id="popup1" class="overlay">
+                <div id="popup1" class="overlay" style = "background: lightblue">
                         <div class="popup">
                         <center>
                         <br><br><br><br>
@@ -632,7 +632,7 @@
                                 
                                 
                             </div>
-                            <div style="display: flex;justify-content: center;">
+                            <div style="display: flex;justify-content: center; height: 600px; overflow-y: auto">
                             
                             <a href="doctors.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;OK&nbsp;&nbsp;</font></button></a>
 
