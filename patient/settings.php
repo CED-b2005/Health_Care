@@ -255,7 +255,7 @@
                             You want to delete Your Account<br>('.substr($nameget,0,40).').
                             
                         </div>
-                        <div style="display: flex;justify-content: center;">
+                        <div style="display: flex;justify-content: center; height: 400px; overflow-y: auto">
                         <a href="delete-account.php?id='.$id.'" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
                         <a href="settings.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;No&nbsp;&nbsp;</font></button></a>
 
@@ -289,7 +289,7 @@
                             eDoc Web App<br>
                             
                         </div>
-                        <div style="display: flex;justify-content: center;">
+                        <div style="display: flex;justify-content: center; height: 400px; overflow-y: auto">
                         <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
                         
                             <tr>
@@ -412,9 +412,9 @@
                             <center>
                             
                                 <a class="close" href="settings.php">&times;</a> 
-                                <div style="display: flex;justify-content: center;">
+                                <div style="display: flex;justify-content: center; height: 400px; overflow-y: auto">
                                 <div class="abc">
-                                <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
+                                <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0" >
                                 <tr>
                                         <td class="label-td" colspan="2">'.
                                             $errorlist[$error_1]
