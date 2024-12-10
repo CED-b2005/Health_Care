@@ -28,7 +28,7 @@ $_SESSION["user"]="";
 $_SESSION["usertype"]="";
 
 // Set the new timezone
-date_default_timezone_set('Asia/Vietnam');
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 $date = date('Y-m-d');
 
 $_SESSION["date"]=$date;

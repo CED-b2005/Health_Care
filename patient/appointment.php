@@ -93,7 +93,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                    <a href="../index.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
                                 </td>
                             </tr>
                     </table>
@@ -258,6 +258,10 @@
                                             $appodate=$row["appodate"];
                                             $appoid=$row["appoid"];
     
+                                            // $result = $database->query("select * from appointment where scheduleid = $scheduleid");
+                                            // $n = $result->fetch_row();
+                                            // echo($n);
+
                                             if($scheduleid==""){
                                                 break;
                                             }

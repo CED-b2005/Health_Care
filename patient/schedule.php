@@ -83,7 +83,7 @@
                          </tr>
                          <tr>
                              <td colspan="2">
-                                 <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                 <a href="../index.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
                              </td>
                          </tr>
                  </table>
@@ -282,14 +282,21 @@
                                             $docname=$row["docname"];
                                             $scheduledate=$row["scheduledate"];
                                             $scheduletime=$row["scheduletime"];
+                                            $display = "block";
     
                                             if($scheduleid==""){
                                                 break;
                                             }
+
+                                            $results = $database->query("select count(scheduleid) as 'num' from appointment where scheduleid = $scheduleid");
+                                            $n = $results->fetch_assoc();
+                                            if ($n['num'] >= 1) {
+                                                $display = 'display: none';
+                                            };                                         
     
                                         echo '
-                                        <td style="width: 25%;">
-                                                <div  class="dashboard-items search-items"  >
+                                        <td style="width: 25%; '.$display .'">
+                                                <div  class="dashboard-items search-items"   >
                                                 
                                                     <div style="width:100%">
                                                             <div class="h1-search">
@@ -302,7 +309,7 @@
                                                                 '.$scheduledate.'<br>Starts: <b>@'.substr($scheduletime,0,5).'</b> (24h)
                                                             </div>
                                                             <br>
-                                                            <a href="booking.php?id='.$scheduleid.'" ><button  class="login-btn btn-primary-soft btn "  style="padding-top:11px;padding-bottom:11px;width:100%"><font class="tn-in-text">Book Now</font></button></a>
+                                                            <a href="booking.php?id='.$scheduleid.'"><button  class="login-btn btn-primary-soft btn "  style="padding-top:11px;padding-bottom:11px;width:100%"><font class="tn-in-text">Book Now</font></button></a>
                                                     </div>
                                                             
                                                 </div>
